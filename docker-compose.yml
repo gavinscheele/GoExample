@@ -1,0 +1,31 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+    db:
+      container_name: gavin-psql2
+      restart: always
+      environment:
+        POSTGRES_DB: gavin
+        POSTGRES_PASSWORD: secret
+      build: 
+        context: psql/
+        dockerfile: Dockerfile
+      ports:
+        - 5433:5432
+    
+    example:
+      container_name: example
+      environment:
+        EXAMPLE_DB_HOST: gavin-psql2
+        EXAMPLE_DB_USERNAME: postgres
+        EXAMPLE_DB_PASSWORD: secret
+        EXAMPLE_DB_NAME: gavin
+        EXAMPLE_PORT: 8000
+      depends_on: 
+        - db
+      ports:
+        - 8000:8000
+      build: .
+      command: /usr/local/bin/main

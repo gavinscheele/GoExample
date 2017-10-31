@@ -1,0 +1,5 @@
+export EXAMPLE_DB_HOST="gavin-psql2"
+export EXAMPLE_DB_USERNAME="postgres"
+export EXAMPLE_DB_PASSWORD="secret"
+export EXAMPLE_DB_NAME="gavin"
+export EXAMPLE_PORT="8000"
