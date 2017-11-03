@@ -3,7 +3,7 @@ package psql
 import (
 	"database/sql"
 
-	"github.com/gdscheele/Example/src/model"
+	"github.com/pubgslotsExample/src/model"
 )
 
 type PsqlRepository struct {

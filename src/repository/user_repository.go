@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/gdscheele/Example/src/model"
+import "github.com/pubgslotsExample/src/model"
 
 type UserRepository interface {
 	GetUser(ID int64) (*model.User, error)

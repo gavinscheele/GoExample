@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gdscheele/Example/src/repository"
-	"github.com/gdscheele/Example/src/repository/psql"
+	"github.com/pubgslotsExample/src/repository"
+	"github.com/pubgslotsExample/src/repository/psql"
 	"github.com/gorilla/mux"
 	"github.com/kelseyhightower/envconfig"
 )
