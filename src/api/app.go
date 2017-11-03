@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/pubgslotsExample/src/repository"
-	"github.com/pubgslotsExample/src/repository/psql"
 	"github.com/gorilla/mux"
 	"github.com/kelseyhightower/envconfig"
+	"github.com/GoExample/Example/src/repository"
+	"github.com/GoExample/Example/src/repository/psql"
 )
 
 type App struct {

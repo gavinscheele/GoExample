@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pubgslotsExample/src/api"
+import "github.com/GoExample/Example/src/api"
 
 func main() {
 	app := api.NewApp()
